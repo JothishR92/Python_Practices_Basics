@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.10 on linux)" generated="20210827 16:24:31.033" rpa="false">
+<suite id="s1" name="Addition" source="/home/jothish/PycharmProjects/Python_Practices_Basics/robot_framework/addition.robot">
+<test id="s1-t1" name="Addition of code">
+<kw name="Add" library="main">
+<arguments>
+<arg>${a}</arg>
+<arg>${b}</arg>
+</arguments>
+<assign>
+<var>${value}</var>
+</assign>
+<msg timestamp="20210827 16:24:31.058" level="INFO">${value} = 20</msg>
+<status status="PASS" starttime="20210827 16:24:31.058" endtime="20210827 16:24:31.058"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<arguments>
+<arg>${c}+${d}</arg>
+</arguments>
+<assign>
+<var>${value2}</var>
+</assign>
+<msg timestamp="20210827 16:24:31.059" level="INFO">${value2} = 20</msg>
+<status status="PASS" starttime="20210827 16:24:31.058" endtime="20210827 16:24:31.059"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${value2}</arg>
+<arg>${value}</arg>
+</arguments>
+<status status="PASS" starttime="20210827 16:24:31.059" endtime="20210827 16:24:31.059"></status>
+</kw>
+<status status="PASS" starttime="20210827 16:24:31.057" endtime="20210827 16:24:31.059" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210827 16:24:31.034" endtime="20210827 16:24:31.061"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Addition">Addition</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
